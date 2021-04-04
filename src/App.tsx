@@ -4,6 +4,7 @@ import { UseState } from './components/useState';
 import { UseEffect } from './components/useEffect';
 import { UseReducer } from './components/useReducer';
 import { UseInput } from './components/UseInput';
+import { UseDebounce } from './components/UseDebounce';
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <UseEffect />
       <UseReducer />
       <UseInput />
+      <UseDebounce />
     </div>
   );
 }
