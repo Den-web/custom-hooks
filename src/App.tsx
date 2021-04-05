@@ -1,34 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import { UseState } from './components/useState';
 import { UseEffect } from './components/useEffect';
 import { UseReducer } from './components/useReducer';
 import { UseInput } from './components/UseInput';
 import { UseDebounce } from './components/UseDebounce';
+import { Form } from './containers/UseForm';
+import { UseToggle } from './containers/UseToggle';
+import { UseContext } from './containers/UseContext';
+import { UseLocalStorage } from './containers/UseLocalStorage';
+import { UseClippy } from './containers/UseClippy';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
       <UseState />
       <UseEffect />
       <UseReducer />
       <UseInput />
       <UseDebounce />
+      <Form />
+      <UseToggle />
+      <UseContext />
+      <UseLocalStorage />
+      <UseClippy />
     </div>
   );
 }
