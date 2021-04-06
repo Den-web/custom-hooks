@@ -14,15 +14,25 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <h2>UseState</h2>
       <UseState />
+      <h2>UseEffect</h2>
       <UseEffect />
+      <h2>UseReducer</h2>
       <UseReducer />
+      <h2>UseInput</h2>
       <UseInput />
+      <h2>UseDebounce</h2>
       <UseDebounce />
+      <h2>Form</h2>
       <Form />
+      <h2>UseToggle</h2>
       <UseToggle />
+      <h2>UseContext</h2>
       <UseContext />
+      <h2>UseLocalStorage</h2>
       <UseLocalStorage />
+      <h2>UseClippy</h2>
       <UseClippy />
     </div>
   );

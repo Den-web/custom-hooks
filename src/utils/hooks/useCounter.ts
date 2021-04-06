@@ -1,18 +1,18 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export function useCounter(initialCount = 0, value: number) {
   const [count, setCount] = useState(initialCount);
 
   const increment = () => {
-    setCount(prevCount => prevCount + value)
+    setCount((prevCount) => prevCount + value);
   };
 
   const decrement = () => {
-    setCount(prevCount => prevCount - value)
+    setCount((prevCount) => prevCount - value);
   };
 
   const reset = () => {
-    setCount(initialCount)
+    setCount(initialCount);
   };
-  return [count, increment, decrement, reset]
+  return [count, increment, decrement, reset];
 }

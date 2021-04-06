@@ -1,8 +1,7 @@
-import React from 'react';
-import { useForm } from '../utils/hooks/useForm';
+import React from "react";
+import { useForm } from "../utils/hooks/useForm";
 
 export const Form = () => {
-
   const register = () => {
     console.log(values);
   };
@@ -10,32 +9,28 @@ export const Form = () => {
   const [values, handleChange, handleSubmit] = useForm(register);
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className=''
-    >
+    <form onSubmit={handleSubmit} className="">
       <label>Name:</label>
       <input
-        value={values.name || ''}
+        value={values.name || ""}
         onChange={handleChange}
-        name='name'
+        name="name"
         type="text"
-        placeholder='Den'
-        className=''
+        placeholder="Den"
+        className=""
       />
 
       <label>Handle:</label>
       <input
-        value={values.handle || ''}
+        value={values.handle || ""}
         onChange={handleChange}
-        name='handle'
+        name="handle"
         type="text"
-        placeholder='Den'
-        className=''
+        placeholder="Den"
+        className=""
       />
 
-      <button className=''>Register</button>
-
+      <button className="">Register</button>
     </form>
-  )
+  );
 };

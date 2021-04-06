@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export const useForm = (submitCallback: any) => {
-
   const [state, setState] = useState<any>({});
 
   const handleSubmit = (e: any) => {
@@ -15,5 +14,4 @@ export const useForm = (submitCallback: any) => {
   };
 
   return [state, handleChange, handleSubmit];
-
 };

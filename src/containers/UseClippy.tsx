@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import useClipy from "use-clippy";
 
 export function UseClippy() {
@@ -11,5 +11,5 @@ export function UseClippy() {
 
       <button onClick={() => setClipboard("nnamdi")}>Set Clipboard</button>
     </div>
-  )
+  );
 }

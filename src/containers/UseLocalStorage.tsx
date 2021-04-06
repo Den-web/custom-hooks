@@ -1,4 +1,4 @@
-import {useLocalStorage} from "@rehooks/local-storage"
+import { useLocalStorage } from "@rehooks/local-storage";
 
 export function UseLocalStorage() {
   const [name, setName, deleteName] = useLocalStorage("name");
@@ -11,5 +11,5 @@ export function UseLocalStorage() {
         <button onClick={deleteName}>Delete Value</button>
       </div>
     </div>
-  )
+  );
 }

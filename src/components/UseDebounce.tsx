@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useDebounce } from '../utils/hooks/useDebounce';
+import { useDebounce } from "../utils/hooks/useDebounce";
 // import "./styles.css";
 
 export function UseDebounce() {

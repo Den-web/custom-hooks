@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
 export function UseState() {
   // Объявление переменной состояния, которую мы назовём "count"
@@ -7,9 +7,7 @@ export function UseState() {
   return (
     <div>
       <p>Вы кликнули {count} раз</p>
-      <button onClick={() => setCount(count + 1)}>
-        Нажми на меня
-      </button>
+      <button onClick={() => setCount(count + 1)}>Нажми на меня</button>
     </div>
   );
 }
