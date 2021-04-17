@@ -9,6 +9,7 @@ import { UseToggle } from './containers/UseToggle';
 import { UseContext } from './containers/UseContext';
 import { UseLocalStorage } from './containers/UseLocalStorage';
 import { UseClippy } from './containers/UseClippy';
+import { UseWebworker } from './examples/UseWebworker';
 import './App.css';
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
       <UseLocalStorage />
       <h2>UseClippy</h2>
       <UseClippy />
+      <h2>UseWebworker</h2>
+      <UseWebworker />
     </div>
   );
 }
